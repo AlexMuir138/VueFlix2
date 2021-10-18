@@ -9,9 +9,15 @@
 </template>
 
 <script>
+import { onMounted } from '@vue/runtime-core'
+import { moviesService } from '../services/MoviesService'
+
 export default {
-  name: 'Component',
+
   setup() {
+    onMounted(() => {
+      moviesService.getMovies()
+    })
     return {}
   },
   components: {}
