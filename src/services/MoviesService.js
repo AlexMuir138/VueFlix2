@@ -13,5 +13,12 @@ class MoviesService {
     AppState.movies = res.data.movies.map(m => new Movie(m))
     logger.log(AppState.movies)
   }
+  async searchMovies(searchPhrase){
+    const reg = RegExp(searchPhrase, 'ig')
+    window.localStorage.setItem('phrase', searchPhrase)
+    const foundMovies = AppState.movies.filter(m => reg.test(m.title))
+    logger.log(foundMovies)
+    AppState.searchedMovies = foundMovies
+  }
 }
 export const moviesService = new MoviesService()
