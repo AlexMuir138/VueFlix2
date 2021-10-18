@@ -1,10 +1,10 @@
 <template>
-  <form @submit.prevent="findMovies" class="bg-black rounded">
-    <div class="form-group d-flex align-items-center">
+  <form @submit.prevent="findMovies" class="bg-primary rounded shadow">
+    <div class="form-group d-flex align-items-center m-3">
       <input v-model="query"
              type="text"
              name="search"
-             class="form-control bg-white border-0 shadow"
+             class="form-control bg-white border-0  m-2"
              placeholder="search movies"
       >
       <button class="btn mx-3" type="submit">
