@@ -6,5 +6,6 @@ export const AppState = reactive({
   account: {},
   movies: [],
   searchedMovies: [],
-  searchPhrase: ''
+  searchPhrase: '',
+  searchTime: ''
 })
