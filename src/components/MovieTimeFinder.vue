@@ -20,6 +20,7 @@ import { onMounted } from '@vue/runtime-core'
 import { moviesService } from '../services/MoviesService'
 import { AppState } from '../AppState'
 import { logger } from '../utils/Logger'
+import Pop from '../utils/Pop'
 export default {
 
   setup() {

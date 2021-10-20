@@ -5,6 +5,11 @@
         <MovieFinder />
       </div>
     </div>
+    <div class="row d-flex justify-content-center">
+      <div class="col-8">
+        <MovieTimeFinder />
+      </div>
+    </div>
     <div class="row">
       <div class="col-lg-4" v-for="m in movies" :key="m.id">
         <Movie :movie="m" class="my-2" />
